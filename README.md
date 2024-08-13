@@ -28,13 +28,15 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
    cd animated-circles-game
 
     ```
+
 2. **Install dependencies**
   ```bash
-  npm install
+   npm install
   ```
 3. **Run the project**
-
-  npm run dev
+  ```bash
+    npm run dev
+  ```
 
 ## Technologies Used 🛠️
 
