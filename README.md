@@ -24,7 +24,7 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/animated-circles-game.git
+   git clone https://github.com/SaraZmni/animated-circles-game.git
    cd animated-circles-game
 
     ```
