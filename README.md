@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Animated Circles Game 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Animated Circles Game]
 
-Currently, two official plugins are available:
+A fun and interactive game built with React.js where circles appear on the screen wherever the user clicks! This project is a UI challenge that incorporates features like undo, redo, and resetting the board to enhance the user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+- **Interactive Gameplay**: Click anywhere on the screen, and a circle will appear at that location.
+- **Undo/Redo**: Made a mistake? No worries! You can undo your last action or redo it as needed.
+- **Reset Board**: Clear all circles and start fresh with the reset option.
+- **Smooth Animations**: Enjoy fluid animations that make the gameplay visually appealing.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started 🚀
 
-- Configure the top-level `parserOptions` property like this:
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/animated-circles-game.git
+   cd animated-circles-game
+
+2. **Install dependencies**
+
+  npm install
+
+3. **Run the project**
+
+  npm run dev
+
+## Technologies Used 🛠️
+
+- **React.js**: A powerful JavaScript library for building fast and interactive user interfaces.
+- **TypeScript**: A statically typed superset of JavaScript that helps catch errors early and improves code quality.
+- **JavaScript (ES6+)**: The core language used to handle game logic and state management.
+- **CSS3**: For styling the application and adding smooth, appealing animations.
+- **HTML5**: The markup language used to structure the game.
