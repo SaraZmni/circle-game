@@ -29,10 +29,11 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 
 2. **Install dependencies**
 
+  ```bash
   npm install
 
 3. **Run the project**
-
+  ```bash
   npm run dev
 
 ## Technologies Used 🛠️
