@@ -16,3 +16,9 @@ body {
   border: 15px solid #f4511e;
   cursor: pointer;
 }
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+}
