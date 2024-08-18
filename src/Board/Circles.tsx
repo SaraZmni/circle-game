@@ -5,7 +5,11 @@ const Circle: FC<CircleType> = ({ x, y, bgColor }) => {
   return (
     <div
       className="circle"
-      style={{ backgroundColor: bgColor, top: `${y}px`, left: `${x}px` }}
+      style={{
+        backgroundColor: bgColor,
+        top: `${y}px`,
+        left: `${x}px`,
+      }}
     />
   );
 };
