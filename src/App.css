@@ -21,7 +21,7 @@ body {
   height: 24px;
   border-radius: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  animation: bounce 0.2s ease-in-out forwards;
 }
 .controls {
   display: flex;
@@ -41,4 +41,17 @@ body {
 
 .controls button:active {
   transform: scale(0.9);
+}
+.controls button.disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+@keyframes bounce {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

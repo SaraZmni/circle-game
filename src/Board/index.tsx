@@ -45,12 +45,23 @@ const Board: FC = () => {
       setCircles((prev) => [...prev, lastHistory]);
       setHistory(copy);
     }
-    console.warn("no circle to undo.");
+    console.warn("no circle to redo.");
+  };
+
+  const handleReset = () => {
+    setCircles([]);
+    setHistory([]);
   };
   return (
     <div className="board" onClick={handleClick}>
       <Circles circles={circles} />
-      <Controls onUndo={handleUndo} onRedo={handleRedo} />
+      <Controls
+        onUndo={handleUndo}
+        onRedo={handleRedo}
+        onReset={handleReset}
+        hasCircles={circles.length > 0}
+        hasHistory={history.length > 0}
+      />
     </div>
   );
 };
